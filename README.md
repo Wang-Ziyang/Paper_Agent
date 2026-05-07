@@ -79,31 +79,6 @@ paper/
     └── scripts/check_paper_agent.py
 ```
 
-上传 GitHub 时，建议上传代码、提示词模板、`requirements.txt` 和启动器；不要上传自己的 API Key、未授权论文 PDF、生成的大量输出、`__pycache__`、`.pyc` 等缓存文件。
-
-建议 `.gitignore` 至少包含：
-
-```gitignore
-__pycache__/
-*.pyc
-.env
-outputs/
-outputs_style/
-outputs_outline/
-outputs_check/
-*.partial.json
-test-read/paper/*
-!test-read/paper/.gitkeep
-test-learn/refs/*
-!test-learn/refs/.gitkeep
-test-construct/input/*
-!test-construct/input/.gitkeep
-test-check/input/*
-!test-check/input/.gitkeep
-```
-
-如果 `paper/`、`refs/` 或 `input/` 中包含版权论文、未公开数据或未投稿手稿，也建议不要直接上传。
-
 ## 环境安装
 
 建议使用独立 Conda 环境：
