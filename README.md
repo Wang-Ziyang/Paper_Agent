@@ -778,17 +778,5 @@ ollama run gemma4:26b
 
 如果 Ollama 不在默认地址，运行时传入对应 `--host`、`--ollama-host`。
 
-## 建议的 GitHub 发布前整理
-
-发布前建议检查：
-
-```text
-1. 删除 __pycache__/ 和 *.pyc
-2. 删除或忽略 outputs*/ 中的大量生成结果
-3. 删除 API Key、个人路径、未公开数据
-4. 确认 paper_config.json 中的 workspace 使用示例路径或提醒用户自行修改
-5. 确认 paper.bat 中的 Python 路径使用示例路径或提醒用户自行修改
-6. 检查 refs/、paper/、input/ 是否包含不能公开上传的论文或手稿
-```
-
-推荐在 GitHub README 中保留示例命令，但不要提交真实密钥和隐私数据。
+## 
+这里用的我自己的路径和api配置，需要替换一下
